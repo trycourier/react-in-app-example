@@ -85,7 +85,7 @@ const App = () => {
       </Formik>
 
       <Flex mt={12} justify="center">
-        <Link mx={4} href="https://github.com/trycourier/react-inapp-example">
+        <Link mx={4} href="https://github.com/trycourier/react-in-app-example">
           Checkout on Github
         </Link>
         <Link mx={4} href="https://courier.com">
