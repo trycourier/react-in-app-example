@@ -1,43 +1,46 @@
-[hosted version of this demo](https://xenodochial-shirley-65d638.netlify.app/)
+# Courier React In-App Toast Example
 
-# Getting Started with Create React App
+This is an example React app bootstrapped with Create React App with Typescript to demo the functionality of the [@trycourier/react-toast](https://github.com/trycourier/courier-react/tree/main/packages/react-toast) package.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[@trycourier/react-provider](https://github.com/trycourier/courier-react/tree/main/packages/react-provider) is a dependency that handles all the authentication and integration with the Courier backend.
 
-## Available Scripts
+The only other additional dependencies are [chakra-ui](https://chakra-ui.com) and [Formik](https://chakra-ui.com) which are used to quickly build the demo form that will let you quickly configure and trigger a standalone local notification.
 
-In the project directory, you can run:
+## Online Demo
 
-### `yarn start`
+[Check it here](https://xenodochial-shirley-65d638.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can quickly configure and trigger a simple Toast notification on this page. To test it with your own [Courier Push integration](https://app.courier.com/integrations/courier) you need to quickly clone the repository and run it locally.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Running Locally
 
-### `yarn build`
+#### Prerequisites to run the app:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+- yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository and install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ yarn install
+```
 
-### `yarn eject`
+Start the dev server:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+$ yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app URL will open automatically in your browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Configuring Courier Provider
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You need to pass the client key you get when installing [Courier Push integration](https://app.courier.com/integrations/courier) and the user id to the Courier Provider component as props to start listening for notifications and to automatically style the toast according to your Courier branding.
 
-## Learn More
+You can pass the client key and user id in [index.tsx](https://github.com/trycourier/react-in-app-example/blob/master/src/index.tsx#L9-L10).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Documentation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`useToast` hook is used to show local standalone toast notifications while the `<Toast />` component is there to show the notifications coming from the Courier servers that the Courier Provider is subscribing to.
+
+You can find the full documentation on the component API and usage, as well as, the Courier Push integration testing if you [follow this link](https://stupefied-mclean-b58cde.netlify.app).
