@@ -8,7 +8,7 @@ The only other additional dependencies are [chakra-ui](https://chakra-ui.com) an
 
 ## Online Demo
 
-[Check it here](http://reactinappnotification.com/)
+[Check it here](https://reactinappnotification.com/)
 
 You can quickly configure and trigger a simple Toast notification on this page. To test it with your own [Courier Push integration](https://app.courier.com/integrations/courier) you need to quickly clone the repository and run it locally.
 
