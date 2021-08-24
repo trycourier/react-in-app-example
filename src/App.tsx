@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import {
   Container,
+  Box,
   Heading,
   Text,
   Button,
@@ -9,30 +10,55 @@ import {
   Input,
   Flex,
   Link,
+  Alert,
+  AlertIcon,
+  AlertDescription,
 } from "@chakra-ui/react";
-import { useToast } from "@trycourier/react-toast";
-import { Formik, Field, FieldProps } from "formik";
+import { Inbox } from "@trycourier/react-inbox";
+import { Toast } from "@trycourier/react-toast";
+import { Formik, Field, FieldProps, FormikHelpers } from "formik";
 
-const App = () => {
-  const [show] = useToast();
+const initialValues = {
+  title: "",
+  message: "",
+  cta: "",
+};
 
+type Values = typeof initialValues;
+
+interface AppProps {
+  courierUserId: string;
+}
+
+const App = ({ courierUserId }: AppProps) => {
   const submitHandler = useCallback(
-    ({ notificationTitle, notificationMessage, callToActionCopy }) => {
-      const blocks = [
-        { type: "text", text: notificationMessage },
-        { type: "action", text: callToActionCopy, url: "/" },
-      ] as const;
+    async (values: Values, helpers: FormikHelpers<Values>) => {
+      try {
+        const response = await fetch("/.netlify/functions/submit_form", {
+          method: "POST",
+          body: JSON.stringify({ userId: courierUserId, ...values }),
+          headers: { "content-type": "application/json" },
+        });
 
-      show({
-        title: notificationTitle,
-        blocks: blocks.filter((block) => block.text),
-      });
+        if (!response.ok) throw new Error("Request failed");
+
+        helpers.resetForm();
+        helpers.setStatus("success");
+      } catch {
+        helpers.setStatus("error");
+      }
     },
-    [show]
+    [courierUserId]
   );
 
   return (
     <Container my={8}>
+      <Toast />
+
+      <Box textAlign="right">
+        <Inbox />
+      </Box>
+
       <Heading as="h4" size="md" textAlign="center">
         Welcome to the React In-App Toast App.
       </Heading>
@@ -40,17 +66,21 @@ const App = () => {
         Select the options for your toast and try it below.
       </Text>
 
-      <Formik
-        initialValues={{
-          notificationTitle: "",
-          notificationMessage: "",
-          callToActionCopy: "",
-        }}
-        onSubmit={submitHandler}
-      >
-        {({ handleSubmit }) => (
+      <Formik initialValues={initialValues} onSubmit={submitHandler}>
+        {({ handleSubmit, isSubmitting, status }) => (
           <form onSubmit={handleSubmit}>
-            <Field name="notificationTitle">
+            {status && (
+              <Alert status={status} mb={8}>
+                <AlertIcon />
+                <AlertDescription>
+                  {status === "error"
+                    ? "Error submitting the form"
+                    : "Successfully submitted"}
+                </AlertDescription>
+              </Alert>
+            )}
+
+            <Field name="title">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
                   <FormLabel>Notification Name</FormLabel>
@@ -59,7 +89,7 @@ const App = () => {
               )}
             </Field>
 
-            <Field name="notificationMessage">
+            <Field name="message">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
                   <FormLabel>Notification Message</FormLabel>
@@ -68,7 +98,7 @@ const App = () => {
               )}
             </Field>
 
-            <Field name="callToActionCopy">
+            <Field name="cta">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
                   <FormLabel>Call To Action Copy</FormLabel>
@@ -77,7 +107,12 @@ const App = () => {
               )}
             </Field>
 
-            <Button type="submit" colorScheme="purple" isFullWidth>
+            <Button
+              type="submit"
+              colorScheme="purple"
+              isLoading={isSubmitting}
+              isFullWidth
+            >
               Trigger Toast
             </Button>
           </form>
