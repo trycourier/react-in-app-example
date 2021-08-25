@@ -69,14 +69,10 @@ const App = ({ courierUserId }: AppProps) => {
       <Formik initialValues={initialValues} onSubmit={submitHandler}>
         {({ handleSubmit, isSubmitting, status }) => (
           <form onSubmit={handleSubmit}>
-            {status && (
+            {status === "error" && (
               <Alert status={status} mb={8}>
                 <AlertIcon />
-                <AlertDescription>
-                  {status === "error"
-                    ? "Error submitting the form"
-                    : "Successfully submitted"}
-                </AlertDescription>
+                <AlertDescription>Error submitting the form</AlertDescription>
               </Alert>
             )}
 
