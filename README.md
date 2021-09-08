@@ -8,9 +8,11 @@ The only other additional dependencies are [chakra-ui](https://chakra-ui.com) an
 
 ## Online Demo
 
-[Check it here](https://reactinappnotification.com/)
+Check out the [React Demo App](https://reactinappnotification.com/)
 
-You can quickly configure and trigger a simple Toast notification on this page. To test it with your own [Courier Push integration](https://app.courier.com/integrations/courier) you need to quickly clone the repository and run it locally.
+![toast-notification](https://user-images.githubusercontent.com/28051494/132584772-5fa7d15d-c89f-4f1d-9de5-44ad52e2ee35.gif)
+
+To test it with your own [Courier Push integration](https://app.courier.com/integrations/courier) you need to quickly clone the repository and run it locally.
 
 ## Running Locally
 
@@ -41,6 +43,6 @@ You can pass the client key and user id in [index.tsx](https://github.com/trycou
 
 ## Documentation
 
-`useToast` hook is used to show local standalone toast notifications while the `<Toast />` component is there to show the notifications coming from the Courier servers that the Courier Provider is subscribing to.
+The `useToast` hook is used to show local standalone Toast notifications while the `<Toast />` component displays notifications coming from the Courier servers that the Courier Provider is subscribing to.
 
 You can find the full documentation on the component API and usage, as well as, the Courier Push integration testing if you [follow this link](https://stupefied-mclean-b58cde.netlify.app).
