@@ -34,7 +34,7 @@ const App = ({ courierUserId }: AppProps) => {
   const submitHandler = useCallback(
     async (values: Values, helpers: FormikHelpers<Values>) => {
       try {
-        const response = await fetch("/.netlify/functions/submit_form", {
+        const response = await fetch("/api/submit_form", {
           method: "POST",
           body: JSON.stringify({ userId: courierUserId, ...values }),
           headers: { "content-type": "application/json" },
