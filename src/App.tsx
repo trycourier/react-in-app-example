@@ -55,7 +55,7 @@ const App = ({ courierUserId }: AppProps) => {
     <Container my={8}>
       <Toast />
 
-      <Box textAlign="right">
+      <Box textAlign="right" pos="relative" zIndex={1}>
         <Inbox />
       </Box>
 

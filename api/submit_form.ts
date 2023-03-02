@@ -16,7 +16,7 @@ export default async function submit_form(
 
   try {
     const courierResponse = await courier.send({
-      eventId: process.env.COURIER_NOTIFICATION_ID,
+      eventId: process.env.COURIER_NOTIFICATION_ID!,
       recipientId: req.body.userId,
       profile: {
         courier: {

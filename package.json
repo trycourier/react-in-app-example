@@ -2,14 +2,15 @@
   "name": "react-in-app-example",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@trycourier/courier": "^2.4.0",
-    "@trycourier/react-inbox": "^1.0.1",
-    "@trycourier/react-provider": "^1.0.1",
-    "@trycourier/react-toast": "^1.0.1",
+    "@trycourier/courier": "^4.2.0",
+    "@trycourier/react-inbox": "^2.0.1",
+    "@trycourier/react-provider": "^2.0.1",
+    "@trycourier/react-toast": "^2.0.1",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -48,7 +49,8 @@
   "devDependencies": {
     "husky": ">=6",
     "lint-staged": ">=10",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "vercel": "^28.16.11"
   },
   "prettier": {},
   "lint-staged": {
