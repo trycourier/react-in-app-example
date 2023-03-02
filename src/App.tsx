@@ -56,7 +56,7 @@ const App = ({ courierUserId }: AppProps) => {
       <Toast />
 
       <Box textAlign="right" pos="relative" zIndex={1}>
-        <Inbox />
+        <Inbox placement="left" />
       </Box>
 
       <Heading as="h4" size="md" textAlign="center">
@@ -80,7 +80,7 @@ const App = ({ courierUserId }: AppProps) => {
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
                   <FormLabel>Notification Name</FormLabel>
-                  <Input {...field} />
+                  <Input {...field} placeholder="Title" />
                 </FormControl>
               )}
             </Field>
@@ -89,7 +89,7 @@ const App = ({ courierUserId }: AppProps) => {
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
                   <FormLabel>Notification Message</FormLabel>
-                  <Input {...field} />
+                  <Input {...field} placeholder="Message" />
                 </FormControl>
               )}
             </Field>

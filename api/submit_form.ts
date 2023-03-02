@@ -16,15 +16,26 @@ export default async function submit_form(
 
   try {
     const courierResponse = await courier.send({
-      eventId: process.env.COURIER_NOTIFICATION_ID!,
-      recipientId: req.body.userId,
-      profile: {
-        courier: {
-          channel: req.body.userId,
+      message: {
+        to: {
+          courier: {
+            channel: req.body.userId,
+          },
         },
+        content: {
+          version: "2022-01-01",
+          elements: [
+            { type: "meta", title: req.body.title || "Title" },
+            { type: "text", content: req.body.message || "Message" },
+            {
+              type: "action",
+              content: req.body.cta,
+              href: "https://www.courier.com",
+            },
+          ],
+        },
+        routing: { method: "single", channels: ["push"] },
       },
-      data: req.body,
-      override: {},
     });
 
     res.statusCode = 201;
