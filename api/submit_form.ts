@@ -27,11 +27,7 @@ export default async function submit_form(
           elements: [
             { type: "meta", title: req.body.title || "Title" },
             { type: "text", content: req.body.message || "Message" },
-            {
-              type: "action",
-              content: req.body.cta,
-              href: "https://www.courier.com",
-            },
+            { type: "action", content: "", href: req.body.cta },
           ],
         },
         routing: { method: "single", channels: ["push"] },

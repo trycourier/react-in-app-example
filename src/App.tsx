@@ -56,7 +56,7 @@ const App = ({ courierUserId }: AppProps) => {
       <Toast />
 
       <Box textAlign="right" pos="relative" zIndex={1}>
-        <Inbox placement="left" />
+        <Inbox placement="left" openLinksInNewTab />
       </Box>
 
       <Heading as="h4" size="md" textAlign="center">
@@ -97,8 +97,8 @@ const App = ({ courierUserId }: AppProps) => {
             <Field name="cta">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
-                  <FormLabel>Call To Action Copy</FormLabel>
-                  <Input {...field} />
+                  <FormLabel>Action URL</FormLabel>
+                  <Input type="url" {...field} />
                 </FormControl>
               )}
             </Field>
