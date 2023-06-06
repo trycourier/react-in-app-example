@@ -60,10 +60,10 @@ const App = ({ courierUserId }: AppProps) => {
       </Box>
 
       <Heading as="h4" size="md" textAlign="center">
-        Welcome to the React In-App Toast App.
+        Experience Courier's Inbox
       </Heading>
       <Text textAlign="center" mt={2} mb={12} fontSize="lg">
-        Select the options for your toast and try it below.
+        Enter a message to see a toast message appear, the bell in the top right light up, and a new message in your inbox.
       </Text>
 
       <Formik initialValues={initialValues} onSubmit={submitHandler}>
@@ -79,7 +79,7 @@ const App = ({ courierUserId }: AppProps) => {
             <Field name="title">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
-                  <FormLabel>Notification Name</FormLabel>
+                  <FormLabel>Notification title</FormLabel>
                   <Input {...field} placeholder="Title" />
                 </FormControl>
               )}
@@ -88,7 +88,7 @@ const App = ({ courierUserId }: AppProps) => {
             <Field name="message">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
-                  <FormLabel>Notification Message</FormLabel>
+                  <FormLabel>Notification message</FormLabel>
                   <Input {...field} placeholder="Message" />
                 </FormControl>
               )}
@@ -97,8 +97,8 @@ const App = ({ courierUserId }: AppProps) => {
             <Field name="cta">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
-                  <FormLabel>Action URL</FormLabel>
-                  <Input type="url" {...field} />
+                  <FormLabel>Call to action URL</FormLabel>
+                  <Input type="http://www.example.com" {...field} />
                 </FormControl>
               )}
             </Field>
@@ -109,7 +109,7 @@ const App = ({ courierUserId }: AppProps) => {
               isLoading={isSubmitting}
               isFullWidth
             >
-              Trigger Toast
+              Send notification
             </Button>
           </form>
         )}
@@ -119,7 +119,7 @@ const App = ({ courierUserId }: AppProps) => {
         <Link mx={4} href="https://github.com/trycourier/react-in-app-example">
           Checkout on Github
         </Link>
-        <Link mx={4} href="https://courier.com">
+        <Link mx={4} href="https://courier.com/docs/inbox">
           Powered by Courier
         </Link>
       </Flex>
