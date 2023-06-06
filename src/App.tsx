@@ -98,7 +98,7 @@ const App = ({ courierUserId }: AppProps) => {
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
                   <FormLabel>Call to action URL</FormLabel>
-                  <Input type="http://www.example.com" {...field} />
+                  <Input type="url" {...field} placeholder="http://www.example.com" />
                 </FormControl>
               )}
             </Field>
