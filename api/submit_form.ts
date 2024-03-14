@@ -1,7 +1,7 @@
 import { CourierClient } from "@trycourier/courier";
-import type { VercelRequest, VercelResponse } from "@vercel/node";
+import { VercelRequest, VercelResponse } from "@vercel/node";
 
-const courier = CourierClient({
+const courier = new CourierClient({
   authorizationToken: process.env.COURIER_AUTH_TOKEN,
 });
 
@@ -18,16 +18,18 @@ export default async function submit_form(
     const courierResponse = await courier.send({
       message: {
         to: {
-          courier: {
-            channel: req.body.userId,
-          },
+          user_id: req.body.userId,
         },
         content: {
           version: "2022-01-01",
           elements: [
             { type: "meta", title: req.body.title || "Title" },
-            { type: "text", content: req.body.message || "Message" },
-            { type: "action", content: "", href: req.body.cta },
+            {
+              type: "text",
+              content: req.body.message || "Message",
+              align: "left",
+            },
+            { type: "action", content: "Go", href: req.body.cta },
           ],
         },
         routing: { method: "single", channels: ["push"] },
