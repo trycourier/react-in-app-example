@@ -1,22 +1,20 @@
 # Courier React In-App Toast Example
 
-This is an example React app bootstrapped with Create React App with Typescript to demo the functionality of the [@trycourier/react-toast](https://github.com/trycourier/courier-react/tree/main/packages/react-toast) package.
+This repository is an example React app bootstrapped with Create React App with Typescript to demo the functionality of the [@trycourier/react-toast](https://www.npmjs.com/package/@trycourier/react-toast) and [@trycourier/react-inbox](https://www.npmjs.com/package/@trycourier/react-inbox).
 
 [@trycourier/react-provider](https://github.com/trycourier/courier-react/tree/main/packages/react-provider) is a dependency that handles all the authentication and integration with the Courier backend.
 
-The only other additional dependencies are [chakra-ui](https://chakra-ui.com) and [Formik](https://chakra-ui.com) which are used to quickly build the demo form that will let you quickly configure and trigger a standalone local notification.
-
 ## Online Demo
 
-[Check it here](https://reactinappnotification.com/)
+[Check it out here](https://reactinappnotification.com/)
 
-You can quickly configure and trigger a simple Toast notification on this page. To test it with your own [Courier Push integration](https://app.courier.com/integrations/courier) you need to quickly clone the repository and run it locally.
+You can quickly configure and trigger a simple Toast notification on this page. To run this locally, you will need a Courier account and enable the [Courier Push integration](https://app.courier.com/integrations/courier).
 
 ## Running Locally
 
 #### Prerequisites to run the app:
 
-- Node.js
+- Node.js (v18)
 - yarn
 
 Clone the repository and install the dependencies:
@@ -25,22 +23,14 @@ Clone the repository and install the dependencies:
 $ yarn install
 ```
 
+Fill in your Courier Client Key and Courier Test or Production Key in .env file. Find them in [API Keys](https://app.courier.com/integrations/api-keys)
+
+```bash
+cp .env.example .env
+```
+
 Start the dev server:
 
 ```bash
-$ yarn start
+$ yarn develop
 ```
-
-The app URL will open automatically in your browser.
-
-## Configuring Courier Provider
-
-You need to pass the client key you get when installing [Courier Push integration](https://app.courier.com/integrations/courier) and the user id to the Courier Provider component as props to start listening for notifications and to automatically style the toast according to your Courier branding.
-
-You can pass the client key and user id in [index.tsx](https://github.com/trycourier/react-in-app-example/blob/master/src/index.tsx#L9-L10).
-
-## Documentation
-
-`useToast` hook is used to show local standalone toast notifications while the `<Toast />` component is there to show the notifications coming from the Courier servers that the Courier Provider is subscribing to.
-
-You can find the full documentation on the component API and usage, as well as, the Courier Push integration testing if you [follow this link](https://stupefied-mclean-b58cde.netlify.app).
