@@ -2711,10 +2711,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trycourier/client-graphql@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.0.0.tgz#cbb94e81d213ead6e2ed0ad116e2d4dc74df2fa8"
-  integrity sha512-j0KEdyYX615h404zSC4B4t8jo6Ox4vDJnRpb30cj6y4EK+tNijklJzTESpLkKsVXyp0B8PI030FaKm8/AFxl2Q==
+"@trycourier/client-graphql@^5.0.0", "@trycourier/client-graphql@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.0.tgz#830055e534906b2d35b260f70b87bf515216f1f5"
+  integrity sha512-KGZAFy9iGggKtl8WPk1O8tQ9SPLe4+pZfgoZgyOjIMunH17az9ndJ8giLnLpInExfdbcCpbrCXBBEZdO8rtpvw==
   dependencies:
     graphql "^15.5.0"
     isomorphic-fetch "^3.0.0"
@@ -2732,33 +2732,33 @@
     qs "6.11.2"
     url-join "4.0.1"
 
-"@trycourier/react-elements@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-elements/-/react-elements-5.0.0.tgz#625d40a31d1949792467dcc2e2e064136cc13825"
-  integrity sha512-GIECsLDiCPHeypWsb/xANks+SDymq/ZNURWWXo6ucpdWC1gAlUG+oLJip1PqoOmbyJA9OZSHdyh7A0qCfWigOw==
+"@trycourier/react-elements@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-elements/-/react-elements-5.1.0.tgz#069c0adb9960c59013d0bf09d48a6274c2c941eb"
+  integrity sha512-l1Wk33ztQW46I4dSgjXG9ATmLlisYu6OVG1yUqac4Al9zPCig2y6bAdz4CJ1yXI/pDE3IM5WIQFoDdTTpBMBcg==
   dependencies:
     rimraf "^3.0.2"
 
-"@trycourier/react-hooks@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.0.0.tgz#3c14df4de8b685ac7a5c678fb630fc72027bc114"
-  integrity sha512-XsvZtwaQIFOTsiGiqdIu1rjbYOG4SWdrENRdd/H4me81x8LboTRJIqq1p43PM1dtMJ1Qiji6i2bWnXyTAG1HqQ==
+"@trycourier/react-hooks@^5.0.0", "@trycourier/react-hooks@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.0.tgz#0fc6d6c5f16484c3c7374eede53f7369e430df1f"
+  integrity sha512-7y8LEHMDIo1nWtydaymDa6m9viHYlkTS88Cam+QGoB2OKddp8KonY4A2BCuSjg9JihhDRxUFVyYnGQ/rvRWCCw==
   dependencies:
-    "@trycourier/client-graphql" "^5.0.0"
+    "@trycourier/client-graphql" "^5.1.0"
     deep-extend "^0.6.0"
     rimraf "^3.0.2"
 
-"@trycourier/react-inbox@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-inbox/-/react-inbox-5.0.0.tgz#33913854e8ebced14358faf87638ddb0b72357e5"
-  integrity sha512-EYiBsfMFcttOBzvXyV34OOcCqWabRtgUHcH/2RRf7M0Ul0QbOdwACjCkhpjaaYLivvBVHkmn7g9oOMqyU08d0g==
+"@trycourier/react-inbox@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-inbox/-/react-inbox-5.1.0.tgz#f198a3e6308a941365e1e52ba31bb21875f6122c"
+  integrity sha512-WcFgBO8DqzifNW7/E3Jb1R+PhEKugMy6PTAZ3nJesOnyNOaxZY90ODQawgNOC9sW3kSQ87/e/gLTGTQjFh6Nhw==
   dependencies:
     "@fontsource/poppins" "^4.5.9"
     "@tippyjs/react" "^4.2.3"
-    "@trycourier/client-graphql" "^5.0.0"
-    "@trycourier/react-elements" "^5.0.0"
-    "@trycourier/react-hooks" "^5.0.0"
-    "@trycourier/react-preferences" "^5.0.0"
+    "@trycourier/client-graphql" "^5.1.0"
+    "@trycourier/react-elements" "^5.1.0"
+    "@trycourier/react-hooks" "^5.1.0"
+    "@trycourier/react-preferences" "^5.1.0"
     classnames "^2.2.6"
     date-fns "^2.19.0"
     deep-extend "^0.6.0"
@@ -2770,12 +2770,12 @@
     tinycolor2 "^1.4.2"
     urql "^2.0.1"
 
-"@trycourier/react-preferences@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-preferences/-/react-preferences-5.0.0.tgz#e53a8dc28b075a503eb87183d34f44b1cbee9308"
-  integrity sha512-sL/x+cfs6HGCOKPKQwzKsNoG4E3qGW7YO7ys+hnTKXKUR+wI8rZvKEyp6jFjJGrPLezwwPF6F20yxsU1RmXu/w==
+"@trycourier/react-preferences@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-preferences/-/react-preferences-5.1.0.tgz#ac2ee5f63ed885d6296dce8cfaa8aa9cc77c043f"
+  integrity sha512-blo2vuaLqeWbxc+IY8aiRcGJSnRi/VEKS/Ew3R1CMJb09L7SZtOrUpz+/AFxg0+Bk2aJe+R8akwSlgXsUjxfwQ==
   dependencies:
-    "@trycourier/react-hooks" "^5.0.0"
+    "@trycourier/react-hooks" "^5.1.0"
     react-toggle "^4.1.2"
     styled-components "^5.3.6"
 
