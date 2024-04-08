@@ -2733,9 +2733,9 @@
     url-join "4.0.1"
 
 "@trycourier/react-elements@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-elements/-/react-elements-5.0.0.tgz#625d40a31d1949792467dcc2e2e064136cc13825"
-  integrity sha512-GIECsLDiCPHeypWsb/xANks+SDymq/ZNURWWXo6ucpdWC1gAlUG+oLJip1PqoOmbyJA9OZSHdyh7A0qCfWigOw==
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-elements/-/react-elements-5.1.0.tgz#069c0adb9960c59013d0bf09d48a6274c2c941eb"
+  integrity sha512-l1Wk33ztQW46I4dSgjXG9ATmLlisYu6OVG1yUqac4Al9zPCig2y6bAdz4CJ1yXI/pDE3IM5WIQFoDdTTpBMBcg==
   dependencies:
     rimraf "^3.0.2"
 
