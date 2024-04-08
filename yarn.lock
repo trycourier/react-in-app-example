@@ -2711,10 +2711,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trycourier/client-graphql@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.0.0.tgz#cbb94e81d213ead6e2ed0ad116e2d4dc74df2fa8"
-  integrity sha512-j0KEdyYX615h404zSC4B4t8jo6Ox4vDJnRpb30cj6y4EK+tNijklJzTESpLkKsVXyp0B8PI030FaKm8/AFxl2Q==
+"@trycourier/client-graphql@^5.0.0", "@trycourier/client-graphql@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.0.tgz#830055e534906b2d35b260f70b87bf515216f1f5"
+  integrity sha512-KGZAFy9iGggKtl8WPk1O8tQ9SPLe4+pZfgoZgyOjIMunH17az9ndJ8giLnLpInExfdbcCpbrCXBBEZdO8rtpvw==
   dependencies:
     graphql "^15.5.0"
     isomorphic-fetch "^3.0.0"
@@ -2779,12 +2779,12 @@
     react-toggle "^4.1.2"
     styled-components "^5.3.6"
 
-"@trycourier/react-provider@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-provider/-/react-provider-5.0.0.tgz#ca110bb47f604c8d1bcdff09d2264b22695ce361"
-  integrity sha512-GH5KX91DHs/rxVh4H2Teg1CZComalfRoYNCjG0eKkbmDbXi1C2x+h7A/w5Cg+Nfah/IZ0fjKNLBVeAEptIKmUw==
+"@trycourier/react-provider@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-provider/-/react-provider-5.1.0.tgz#fa46efb313a50f8a508d9124d4c6787bb1bbf02c"
+  integrity sha512-a5auN0L3pS+T4O4UBFptuGx3lH2Co91fadgK4zLPsQY06NWlHA5DHDE9DIUe0x/iX5Gk+55vuhDLtenkRnWOdQ==
   dependencies:
-    "@trycourier/client-graphql" "^5.0.0"
+    "@trycourier/client-graphql" "^5.1.0"
     buffer "^6.0.3"
     jwt-decode "^3.1.2"
     react-use "^17.2.1"
