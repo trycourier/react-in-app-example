@@ -2711,10 +2711,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trycourier/client-graphql@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.0.0.tgz#cbb94e81d213ead6e2ed0ad116e2d4dc74df2fa8"
-  integrity sha512-j0KEdyYX615h404zSC4B4t8jo6Ox4vDJnRpb30cj6y4EK+tNijklJzTESpLkKsVXyp0B8PI030FaKm8/AFxl2Q==
+"@trycourier/client-graphql@^5.0.0", "@trycourier/client-graphql@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.1.tgz#695f1107973debcbeea8d6cb24751a547189de41"
+  integrity sha512-ziQrgQwPT201FbItu1FUmfbuEk9T2/yEqLGyiLhuvLlBFjeIrdZQNboNhN3egfGdixW6biWp9+NOcK5Oxh46VQ==
   dependencies:
     graphql "^15.5.0"
     isomorphic-fetch "^3.0.0"
@@ -2732,33 +2732,33 @@
     qs "6.11.2"
     url-join "4.0.1"
 
-"@trycourier/react-elements@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-elements/-/react-elements-5.0.0.tgz#625d40a31d1949792467dcc2e2e064136cc13825"
-  integrity sha512-GIECsLDiCPHeypWsb/xANks+SDymq/ZNURWWXo6ucpdWC1gAlUG+oLJip1PqoOmbyJA9OZSHdyh7A0qCfWigOw==
+"@trycourier/react-elements@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-elements/-/react-elements-5.1.1.tgz#9cfc9e01cb7b047a738c709cea500a7b170c0f4e"
+  integrity sha512-WuOPn4cN8cA/Lg301wPDTJdgSOw4Yz8va99rOz4xLxs3XsX5yQP3DtjBPtC5DAnkgR7S+wofWkUt3YLim3irJg==
   dependencies:
     rimraf "^3.0.2"
 
-"@trycourier/react-hooks@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.0.0.tgz#3c14df4de8b685ac7a5c678fb630fc72027bc114"
-  integrity sha512-XsvZtwaQIFOTsiGiqdIu1rjbYOG4SWdrENRdd/H4me81x8LboTRJIqq1p43PM1dtMJ1Qiji6i2bWnXyTAG1HqQ==
+"@trycourier/react-hooks@^5.0.0", "@trycourier/react-hooks@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.1.tgz#b066578a1853023aa7114f21f95163d8780dc18b"
+  integrity sha512-D0uaOAexFuH0MEkWz8hvdR6rUxBv/lfqwPK41UwmccozOcuQixqzCFt4Yz4D6oxW/XCSo3h1KuKpXnD0IDvTEA==
   dependencies:
-    "@trycourier/client-graphql" "^5.0.0"
+    "@trycourier/client-graphql" "^5.1.1"
     deep-extend "^0.6.0"
     rimraf "^3.0.2"
 
-"@trycourier/react-inbox@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-inbox/-/react-inbox-5.0.0.tgz#33913854e8ebced14358faf87638ddb0b72357e5"
-  integrity sha512-EYiBsfMFcttOBzvXyV34OOcCqWabRtgUHcH/2RRf7M0Ul0QbOdwACjCkhpjaaYLivvBVHkmn7g9oOMqyU08d0g==
+"@trycourier/react-inbox@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-inbox/-/react-inbox-5.1.1.tgz#b24821027166f7c8cb0b8addca880de8b6d54d11"
+  integrity sha512-pMxhsAbJQUAIA3OTeiGcDyPeeiXljQfnfKtU2QViE2PnVjWoku22U5JDuAKLeE2XoQKoQJ0QJoPoMz7KEkofVg==
   dependencies:
     "@fontsource/poppins" "^4.5.9"
     "@tippyjs/react" "^4.2.3"
-    "@trycourier/client-graphql" "^5.0.0"
-    "@trycourier/react-elements" "^5.0.0"
-    "@trycourier/react-hooks" "^5.0.0"
-    "@trycourier/react-preferences" "^5.0.0"
+    "@trycourier/client-graphql" "^5.1.1"
+    "@trycourier/react-elements" "^5.1.1"
+    "@trycourier/react-hooks" "^5.1.1"
+    "@trycourier/react-preferences" "^5.1.1"
     classnames "^2.2.6"
     date-fns "^2.19.0"
     deep-extend "^0.6.0"
@@ -2770,12 +2770,13 @@
     tinycolor2 "^1.4.2"
     urql "^2.0.1"
 
-"@trycourier/react-preferences@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-preferences/-/react-preferences-5.0.0.tgz#e53a8dc28b075a503eb87183d34f44b1cbee9308"
-  integrity sha512-sL/x+cfs6HGCOKPKQwzKsNoG4E3qGW7YO7ys+hnTKXKUR+wI8rZvKEyp6jFjJGrPLezwwPF6F20yxsU1RmXu/w==
+"@trycourier/react-preferences@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-preferences/-/react-preferences-5.1.1.tgz#84e75f9cb53c4e5fcb83ed2ca9b9a2b6ff76fa1e"
+  integrity sha512-xHgP3G00/RLUnGkNYzTM/6TK4gs7ejlLjJDx6GQdyzy1nKKASa2e6i3+6nXc0qVTm6iBT2Q/EVPCkRMEE1gxqQ==
   dependencies:
-    "@trycourier/react-hooks" "^5.0.0"
+    "@trycourier/react-hooks" "^5.1.1"
+    date-fns "^2.19.0"
     react-toggle "^4.1.2"
     styled-components "^5.3.6"
 
@@ -11046,7 +11047,16 @@ string-natural-compare@^3.0.1:
   resolved "https://registry.yarnpkg.com/string-natural-compare/-/string-natural-compare-3.0.1.tgz#7a42d58474454963759e8e8b7ae63d71c1e7fdf4"
   integrity sha512-n3sPwynL1nwKi3WJ6AIsClwBMa0zTi54fn2oLU6ndfTSIO05xaznjSf15PcBZU6FNWbmN5Q6cxT4V5hGvB4taw==
 
-"string-width-cjs@npm:string-width@^4.2.0", "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+"string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -11138,7 +11148,14 @@ stringify-object@^3.3.0:
     is-obj "^1.0.1"
     is-regexp "^1.0.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -12441,7 +12458,16 @@ workbox-window@6.6.1:
     "@types/trusted-types" "^2.0.2"
     workbox-core "6.6.1"
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==

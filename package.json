@@ -8,7 +8,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@trycourier/courier": "^6.1.0",
-    "@trycourier/react-inbox": "^5.0.0",
+    "@trycourier/react-inbox": "^5.1.1",
     "@trycourier/react-provider": "^5.0.0",
     "@trycourier/react-toast": "^5.0.0",
     "@types/node": "^12.0.0",
