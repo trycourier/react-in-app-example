@@ -2721,6 +2721,16 @@
     rimraf "^3.0.2"
     urql "^2.0.1"
 
+"@trycourier/client-graphql@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
+  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
+  dependencies:
+    graphql "^15.5.0"
+    isomorphic-fetch "^3.0.0"
+    rimraf "^3.0.2"
+    urql "^2.0.1"
+
 "@trycourier/courier@^6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@trycourier/courier/-/courier-6.1.0.tgz#b4f1187aff679a43227ad4ffe84f52a710d07f20"
@@ -2740,11 +2750,11 @@
     rimraf "^3.0.2"
 
 "@trycourier/react-hooks@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.0.0.tgz#3c14df4de8b685ac7a5c678fb630fc72027bc114"
-  integrity sha512-XsvZtwaQIFOTsiGiqdIu1rjbYOG4SWdrENRdd/H4me81x8LboTRJIqq1p43PM1dtMJ1Qiji6i2bWnXyTAG1HqQ==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
+  integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
   dependencies:
-    "@trycourier/client-graphql" "^5.0.0"
+    "@trycourier/client-graphql" "^5.1.2"
     deep-extend "^0.6.0"
     rimraf "^3.0.2"
 
