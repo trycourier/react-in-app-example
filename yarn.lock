@@ -2731,6 +2731,16 @@
     rimraf "^3.0.2"
     urql "^2.0.1"
 
+"@trycourier/client-graphql@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
+  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
+  dependencies:
+    graphql "^15.5.0"
+    isomorphic-fetch "^3.0.0"
+    rimraf "^3.0.2"
+    urql "^2.0.1"
+
 "@trycourier/courier@^6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@trycourier/courier/-/courier-6.1.0.tgz#b4f1187aff679a43227ad4ffe84f52a710d07f20"
@@ -2750,6 +2760,15 @@
     rimraf "^3.0.2"
 
 "@trycourier/react-hooks@^5.0.0":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
+  integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
+  dependencies:
+    "@trycourier/client-graphql" "^5.1.2"
+    deep-extend "^0.6.0"
+    rimraf "^3.0.2"
+
+"@trycourier/react-hooks@^5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
   integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
@@ -2781,11 +2800,12 @@
     urql "^2.0.1"
 
 "@trycourier/react-preferences@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-preferences/-/react-preferences-5.0.0.tgz#e53a8dc28b075a503eb87183d34f44b1cbee9308"
-  integrity sha512-sL/x+cfs6HGCOKPKQwzKsNoG4E3qGW7YO7ys+hnTKXKUR+wI8rZvKEyp6jFjJGrPLezwwPF6F20yxsU1RmXu/w==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-preferences/-/react-preferences-5.1.2.tgz#b9a24488ba7756280028d6ac966313052f683c4e"
+  integrity sha512-VX5yzxLXObWMSM8TZOu+xcOqZCbCxmsyjhq4NdlXM8VkPINLCIFfIjMUvl0KWtW4FSxcNeVGiU2Pm93qr9jlbg==
   dependencies:
-    "@trycourier/react-hooks" "^5.0.0"
+    "@trycourier/react-hooks" "^5.1.2"
+    date-fns "^2.19.0"
     react-toggle "^4.1.2"
     styled-components "^5.3.6"
 
