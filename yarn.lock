@@ -2721,26 +2721,6 @@
     rimraf "^3.0.2"
     urql "^2.0.1"
 
-"@trycourier/client-graphql@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
-  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
-  dependencies:
-    graphql "^15.5.0"
-    isomorphic-fetch "^3.0.0"
-    rimraf "^3.0.2"
-    urql "^2.0.1"
-
-"@trycourier/client-graphql@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
-  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
-  dependencies:
-    graphql "^15.5.0"
-    isomorphic-fetch "^3.0.0"
-    rimraf "^3.0.2"
-    urql "^2.0.1"
-
 "@trycourier/courier@^6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@trycourier/courier/-/courier-6.1.0.tgz#b4f1187aff679a43227ad4ffe84f52a710d07f20"
@@ -2759,16 +2739,7 @@
   dependencies:
     rimraf "^3.0.2"
 
-"@trycourier/react-hooks@^5.0.0":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
-  integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
-  dependencies:
-    "@trycourier/client-graphql" "^5.1.2"
-    deep-extend "^0.6.0"
-    rimraf "^3.0.2"
-
-"@trycourier/react-hooks@^5.1.2":
+"@trycourier/react-hooks@^5.0.0", "@trycourier/react-hooks@^5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
   integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
@@ -2823,12 +2794,12 @@
     urql "^2.0.1"
     uuid "^9.0.0"
 
-"@trycourier/react-toast@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-toast/-/react-toast-5.0.0.tgz#3dcf7c30209000bb56a32cffcb808dc45eb456ad"
-  integrity sha512-wPbN6AbvnASp/MEewx68UhqKXOMZo9cvxYNJbZ/DhPu1BF+wBz1rITi7HhYve4cXTysJtmY5ZoMbkVKoA4yZyA==
+"@trycourier/react-toast@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-toast/-/react-toast-5.1.2.tgz#7a7d070ac9b3950eeb360b25b3ea5e8f7650d4a7"
+  integrity sha512-PUk10oKNBaehr0sIMebFbkEPFgl61IHlXKpFAndGWzTNYPvHM3Cx3b9PVZMM8j8cDTQlbSLCIQ6ZIyjgiBeqTA==
   dependencies:
-    "@trycourier/react-hooks" "^5.0.0"
+    "@trycourier/react-hooks" "^5.1.2"
     deep-extend "^0.6.0"
     markdown-to-jsx "7.1.7"
     react-toastify "^9.1.3"
