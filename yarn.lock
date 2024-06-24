@@ -2721,32 +2721,13 @@
     rimraf "^3.0.2"
     urql "^2.0.1"
 
-"@trycourier/client-graphql@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
-  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
-  dependencies:
-    graphql "^15.5.0"
-    isomorphic-fetch "^3.0.0"
-    rimraf "^3.0.2"
-    urql "^2.0.1"
-
-"@trycourier/client-graphql@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
-  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
-  dependencies:
-    graphql "^15.5.0"
-    isomorphic-fetch "^3.0.0"
-    rimraf "^3.0.2"
-    urql "^2.0.1"
-
-"@trycourier/courier@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@trycourier/courier/-/courier-6.1.0.tgz#b4f1187aff679a43227ad4ffe84f52a710d07f20"
-  integrity sha512-Ou4Ehca3phOjDhH2x1eFRb2E10ZVtuenhG7RIRN6+/odDsO2ptPtefRnoJnlVs16r909sJqBKx+iHr3/rU/how==
+"@trycourier/courier@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@trycourier/courier/-/courier-6.2.1.tgz#0aeb1db695f95a93ba6cce20ee69b9c0fe760366"
+  integrity sha512-l9PAqOaeXGyq9dNtFFs3PL4QlE9OnmgBhs6qelqw9cwIMFyawP9SP02x7k03cKhSx+zlBEXKMq3MlpDS73fEqQ==
   dependencies:
     form-data "4.0.0"
+    formdata-node "^6.0.3"
     js-base64 "3.7.2"
     node-fetch "2.7.0"
     qs "6.11.2"
@@ -2759,16 +2740,7 @@
   dependencies:
     rimraf "^3.0.2"
 
-"@trycourier/react-hooks@^5.0.0":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
-  integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
-  dependencies:
-    "@trycourier/client-graphql" "^5.1.2"
-    deep-extend "^0.6.0"
-    rimraf "^3.0.2"
-
-"@trycourier/react-hooks@^5.1.2":
+"@trycourier/react-hooks@^5.0.0", "@trycourier/react-hooks@^5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
   integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
@@ -6489,6 +6461,11 @@ form-data@^3.0.0:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
+
+formdata-node@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/formdata-node/-/formdata-node-6.0.3.tgz#48f8e2206ae2befded82af621ef015f08168dc6d"
+  integrity sha512-8e1++BCiTzUno9v5IZ2J6bv4RU+3UKDmqWUQD0MIMVCd9AdhWkO1gw57oo1mNEX1dMq2EGI+FbWz4B92pscSQg==
 
 formik@^2.2.9:
   version "2.4.5"
