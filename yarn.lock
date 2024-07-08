@@ -2721,25 +2721,27 @@
     rimraf "^3.0.2"
     urql "^2.0.1"
 
-"@trycourier/client-graphql@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
-  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
+"@trycourier/client-graphql@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-6.1.0.tgz#2fbec90b63ccf27f2e59d2c0b342965aeac2fb3c"
+  integrity sha512-0ujykN4slkE0Z5Ia6WOEANhCUpH4kxgaGil7gPSr3xY++2JYFyYoLZ/wm0Ltdrjw0zUV1dLzwCt1PONfVb8nwg==
   dependencies:
     graphql "^15.5.0"
     isomorphic-fetch "^3.0.0"
     rimraf "^3.0.2"
     urql "^2.0.1"
 
-"@trycourier/client-graphql@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/client-graphql/-/client-graphql-5.1.2.tgz#9cdc26e034ba80dbcf27ac043590d69315a86517"
-  integrity sha512-iYIWWF5mLPT3/wQrSodVvMQVH2Xx11YdXZBG1EneswdjrYjMaGPrkEQzJzxmsXaklJxkIsf4QKL8gxgg/p2vFg==
+"@trycourier/core@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/core/-/core-6.1.0.tgz#c416a0d0844461628a5c58822e92e92d3ff7224a"
+  integrity sha512-3JNsHVyjWXv1/VZAk7MwDFLHKHMVheQC3HxybyG2xTpLrvM11jPlcqjEqS1Z0XWLmJq2VOt0RxKjdN4tVVRQ/g==
   dependencies:
-    graphql "^15.5.0"
-    isomorphic-fetch "^3.0.0"
     rimraf "^3.0.2"
-    urql "^2.0.1"
+
+"@trycourier/courier-js@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@trycourier/courier-js/-/courier-js-1.4.2.tgz#93c15a2ac95af928796f50763164d64cae32ccbf"
+  integrity sha512-OYVPxSfjxsfBDVSVAYX0EX/ABh0OhEW/pi/0vU07LBuCwSun/tVoxqQsqTz6T3M+86iDSxsfWUMNfnO9MLdLHA==
 
 "@trycourier/courier@^6.1.0":
   version "6.1.0"
@@ -2759,16 +2761,7 @@
   dependencies:
     rimraf "^3.0.2"
 
-"@trycourier/react-hooks@^5.0.0":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
-  integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
-  dependencies:
-    "@trycourier/client-graphql" "^5.1.2"
-    deep-extend "^0.6.0"
-    rimraf "^3.0.2"
-
-"@trycourier/react-hooks@^5.1.2":
+"@trycourier/react-hooks@^5.0.0", "@trycourier/react-hooks@^5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@trycourier/react-hooks/-/react-hooks-5.1.2.tgz#7f1e0a86128072ac514710df031a832c9d231a9a"
   integrity sha512-nJPXCSIlml2TzmPEk/8di4GrxFAK8GU6QoXZPHLlouOD0AdWZLgnfhgIJUeH8TRwKt7izDMI1Fn2Bh6xmnTZYg==
@@ -2809,16 +2802,18 @@
     react-toggle "^4.1.2"
     styled-components "^5.3.6"
 
-"@trycourier/react-provider@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@trycourier/react-provider/-/react-provider-5.1.2.tgz#0439533774af6a153d048e07df5039eac0b5b710"
-  integrity sha512-StV7xRaSPg1YA0ghtoYV6f6LrqcUSh3A6E0de3CWBe33orwipPc0PwHO+vR/HjSZZuOA4sl3YQ31uZhaWmT6mg==
+"@trycourier/react-provider@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/react-provider/-/react-provider-6.1.0.tgz#dddb7dd81285799859a801341d137c71dea01723"
+  integrity sha512-tJtBbW2pQEHIT6OmjNhZRY1MnGBIg721oZIEc9VFwJUtDCbgQE3T/lbCzBfbyjJc7hAwv1Kju/WjV8aDm3Pikg==
   dependencies:
-    "@trycourier/client-graphql" "^5.1.2"
+    "@trycourier/client-graphql" "^6.1.0"
+    "@trycourier/core" "^6.1.0"
+    "@trycourier/courier-js" "^1.4.2"
+    "@trycourier/transport" "^6.1.0"
     buffer "^6.0.3"
     jwt-decode "^3.1.2"
     react-use "^17.2.1"
-    reconnecting-websocket "^4.4.0"
     rimraf "^3.0.2"
     urql "^2.0.1"
     uuid "^9.0.0"
@@ -2835,6 +2830,16 @@
     rimraf "^3.0.2"
     styled-components "^5.2.1"
     tinycolor2 "^1.4.2"
+
+"@trycourier/transport@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@trycourier/transport/-/transport-6.1.0.tgz#9bf3fa12172ca53a52637240d6ac7d7384e307f8"
+  integrity sha512-lTUt1qXDSHZYtqtKcMlA3ttxlCxVwvoxOiAtwsDXx17JAI8pgO1GfBJinmPbq+WaW393j4FaBeQlwTqp1HwZmQ==
+  dependencies:
+    "@trycourier/core" "^6.1.0"
+    jwt-decode "^3.1.2"
+    reconnecting-websocket "^4.4.0"
+    rimraf "^3.0.2"
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
