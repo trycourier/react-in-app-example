@@ -20,7 +20,24 @@ import { Formik, Field, FieldProps, FormikHelpers } from "formik";
 import { CourierProvider } from "@trycourier/react-provider";
 import { ChakraProvider } from "@chakra-ui/react";
 
-type Values = any;
+const defaultSendValues = {
+  title: "",
+  message: "",
+  cta: "",
+};
+
+const localConfig = localStorage.getItem("COURIER_CONFIG");
+const initialConfig = localConfig
+  ? JSON.parse(localConfig)
+  : {
+      apiKey: "",
+      backendApiUrl: "https://api.courier.com",
+      clientKey: process.env.REACT_APP_COURIER_CLIENT_KEY,
+      inboxApiUrl: "https://inbox.courier.com",
+      jwtToken: "",
+      userId: Math.round(Math.random() * 10e16).toString(36),
+      websocketUrl: "wss://realtime.courier.com",
+    };
 
 const Footer = () => {
   return (
@@ -37,17 +54,17 @@ const Footer = () => {
 
 const Form = ({ config }: { config: typeof initialConfig }) => {
   const submitHandler = async (
-    values: Values,
-    helpers: FormikHelpers<Values>
+    values: typeof defaultSendValues,
+    helpers: FormikHelpers<typeof defaultSendValues>
   ) => {
     try {
       const response = await fetch("/api/submit_form", {
         method: "POST",
         body: JSON.stringify({
+          ...values,
           backendApiUrl: config.backendApiUrl,
           apiKey: config.apiKey,
           userId: config.userId,
-          ...values,
         }),
         headers: { "content-type": "application/json" },
       });
@@ -71,14 +88,7 @@ const Form = ({ config }: { config: typeof initialConfig }) => {
         light up, and a new message in your inbox.
       </Text>
 
-      <Formik
-        initialValues={{
-          title: "",
-          message: "",
-          cta: "",
-        }}
-        onSubmit={submitHandler}
-      >
+      <Formik initialValues={defaultSendValues} onSubmit={submitHandler}>
         {({ handleSubmit, isSubmitting, status }) => (
           <form onSubmit={handleSubmit}>
             {status === "error" && (
@@ -135,19 +145,6 @@ const Form = ({ config }: { config: typeof initialConfig }) => {
   );
 };
 
-const localConfig = localStorage.getItem("COURIER_CONFIG");
-const initialConfig = localConfig
-  ? JSON.parse(localConfig)
-  : {
-      apiKey: "",
-      backendApiUrl: "https://api.courier.com",
-      clientKey: process.env.REACT_APP_COURIER_CLIENT_KEY,
-      inboxApiUrl: "https://inbox.courier.com/q",
-      jwtToken: "",
-      userId: Math.round(Math.random() * 10e16).toString(36),
-      websocketUrl: "wss://realtime.courier.com",
-    };
-    
 const Config = ({
   config,
   setConfig,
@@ -157,7 +154,7 @@ const Config = ({
   setConfig: (config: typeof initialConfig) => void;
   setShowConfig: (visible: boolean) => void;
 }) => {
-  const submitHandler = async (values: Values) => {
+  const submitHandler = async (values: typeof initialConfig) => {
     setConfig(values);
     localStorage.setItem("COURIER_CONFIG", JSON.stringify(values));
     setShowConfig(false);
@@ -281,7 +278,7 @@ const App = () => {
               <CourierProvider
                 clientKey={config.clientKey}
                 userId={config.userId}
-                inboxApiUrl={config.inboxApiUrl}
+                inboxApiUrl={`${config.inboxApiUrl}/q`}
                 apiUrl={`${config.backendApiUrl}/client/q`}
                 wsOptions={{
                   url: config.websocketUrl,

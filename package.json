@@ -33,6 +33,9 @@
       "react-app"
     ]
   },
+  "resolutions": {
+    "strip-ansi": "^6.0.1"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
