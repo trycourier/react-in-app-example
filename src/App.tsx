@@ -206,6 +206,15 @@ const Config = ({
               )}
             </Field>
 
+            <Field name="jwtToken">
+              {({ field }: FieldProps) => (
+                <FormControl mb={8}>
+                  <FormLabel>JWT Token</FormLabel>
+                  <Input {...field} placeholder="JWT Token" />
+                </FormControl>
+              )}
+            </Field>
+
             <Field name="inboxApiUrl">
               {({ field }: FieldProps) => (
                 <FormControl mb={8}>
@@ -278,6 +287,7 @@ const App = () => {
               <CourierProvider
                 clientKey={config.clientKey}
                 userId={config.userId}
+                authorization={config.jwtToken}
                 inboxApiUrl={`${config.inboxApiUrl}/q`}
                 apiUrl={`${config.backendApiUrl}/client/q`}
                 wsOptions={{
